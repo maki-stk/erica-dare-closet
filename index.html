@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Erica Dare | The Fall 02</title>
+<title>Erica Dare | Fall 02</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Erica Dare's Fall 02 closet. Tap any piece to shop it.">
-<meta property="og:title" content="Erica Dare | The Fall 02">
+<meta property="og:title" content="Erica Dare | Fall 02">
 <meta property="og:description" content="Tap any piece to shop it.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -15,11 +15,14 @@
 <meta property="og:image" content="https://erica-dare-fall02.vercel.app/closet.jpg">
 <meta name="twitter:image" content="https://erica-dare-fall02.vercel.app/closet.jpg">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@900&family=IBM+Plex+Sans:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f6f2ec;--ink:#241a14;--brown:#6F4E37;--line:#ddd3c6}
 *{box-sizing:border-box}
 html{background:var(--bg)}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Helvetica Neue",Arial,sans-serif;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Helvetica Neue",Arial,sans-serif;font-weight:400;-webkit-text-size-adjust:100%}
 .skip{position:absolute;left:-999px;top:8px;background:#fff;padding:8px 12px;z-index:10}
 .skip:focus{left:8px}
 main{max-width:680px;margin:0 auto}
@@ -27,26 +30,26 @@ main{max-width:680px;margin:0 auto}
 .stage img{width:100%;height:auto;display:block}
 .stage svg{position:absolute;inset:0;width:100%;height:100%}
 .top{text-align:center;padding:22px 16px 18px}
-.top a{color:var(--brown);text-decoration:none;font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;border-bottom:1px solid currentColor;padding-bottom:2px}
-.top h1{margin:14px 0 0;font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(40px,9vw,60px);color:var(--ink);letter-spacing:-.01em;line-height:1}
-.top p.sub{margin:6px 0 0;font-family:Georgia,serif;font-style:italic;font-size:clamp(20px,4.6vw,28px);color:var(--brown)}
-.tapnote{text-align:center;padding:10px 0 0;font-style:italic;font-size:14px;color:#6F4E37;pointer-events:none}
+.top a{color:var(--brown);text-decoration:none;font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;border-bottom:1px solid currentColor;padding-bottom:2px}
+.top h1{margin:14px 0 0;font-family:"Bodoni Moda",Georgia,"Times New Roman",serif;font-weight:900;font-size:clamp(40px,9vw,60px);color:var(--ink);letter-spacing:-.01em;line-height:1}
+.top p.sub{margin:6px 0 0;font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;font-weight:400;font-style:normal;font-size:clamp(20px,4.6vw,28px);color:var(--brown)}
+.tapnote{text-align:center;padding:10px 0 0;font-style:normal;font-size:14px;color:#6F4E37;pointer-events:none}
 .hit polygon{fill:rgba(255,255,255,0);stroke:none;cursor:pointer;transition:fill .15s}
 .hit:hover polygon,.hit:focus polygon,.hit.on polygon{fill:rgba(255,255,255,.26)}
 .hit:focus{outline:none}
 .hit:focus-visible polygon{stroke:#fff;stroke-width:5;fill:rgba(255,255,255,.26)}
-.tip{position:absolute;z-index:5;background:#241a14;color:#fff;font:600 12px/1.3 "Helvetica Neue",Arial,sans-serif;padding:7px 10px;border-radius:6px;pointer-events:none;opacity:0;transform:translate(-50%,-130%);white-space:nowrap}
+.tip{position:absolute;z-index:5;background:#241a14;color:#fff;font:500 12px/1.3 Inter,"Helvetica Neue",Arial,sans-serif;padding:7px 10px;border-radius:6px;pointer-events:none;opacity:0;transform:translate(-50%,-130%);white-space:nowrap}
 .tip.show{opacity:1}
 section.list{padding:28px 16px 8px}
-h2{font-family:Georgia,serif;font-weight:400;font-size:28px;margin:0 0 4px}
-.note{color:#7a6a5c;font-size:14px;margin:0 0 14px}
+h2{font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;font-weight:500;font-size:28px;margin:0 0 4px}
+.note{font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;font-weight:400;color:#7a6a5c;font-size:14px;margin:0 0 14px}
 ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;border-top:1px solid var(--line)}
 @media(min-width:560px){ul{grid-template-columns:1fr 1fr;column-gap:24px}}
 li a{display:flex;align-items:center;gap:14px;padding:12px 4px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
 li a:hover,li a.on{background:#efe8dd}
 li img{width:64px;height:64px;object-fit:cover;border-radius:4px;background:#eee9e0}
 li span{font-size:15px;line-height:1.3}
-li em{display:block;font-style:normal;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--brown);font-weight:700;margin-bottom:2px}
+li em{display:block;font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;font-style:normal;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--brown);font-weight:500;margin-bottom:2px}
 footer{padding:22px 16px 40px;font-size:13px;color:#7a6a5c;text-align:center}
 footer a{color:var(--brown)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -55,7 +58,7 @@ footer a{color:var(--brown)}
 <body>
 <a class="skip" href="#list">Skip to the list of pieces</a>
 <main>
-<header class="top"><a href="https://go.shopmy.us/c-8578882?s=sl1_ccr_cpl" target="_blank" rel="noopener sponsored">Shop the full Fall 02 shelf</a><h1>Erica Dare</h1><p class="sub">The Fall 02</p></header>
+<header class="top"><a href="https://go.shopmy.us/c-8578882?s=sl1_ccr_cpl" target="_blank" rel="noopener sponsored">Shop the full Fall 02 shelf</a><h1>Erica Dare</h1><p class="sub">Fall 02</p></header>
 <div class="stage" id="stage">
 <img src="closet.jpg" width="1360" height="2048" alt="An open LOJEL suitcase packed with Erica Dare's Fall 02 picks: a sherpa jacket, cream sheer top and bra, jeans, belt bag, sneakers, cream socks, sunglasses, jewelry and beauty.">
 <svg viewBox="0 0 1360 2048" role="group" aria-label="Shop the suitcase">
